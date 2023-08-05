@@ -9,3 +9,7 @@ Ruby version: 3.2.2
 - Basic TDD  
 \- Red, Green, Refactor  
 \- `asert`, `asert_equal` methods *(File: `about_asserts.rb` line 19-34)*  
+
+- Boolean:  
+\- `false` and `nil` is treated as `false`  
+\- Everything esle is treated as `true`. Example: `0`, `""`, `[]`, `{}`  
