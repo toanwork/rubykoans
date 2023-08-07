@@ -37,3 +37,7 @@ Ruby version: 3.2.2
 - Array:  
 \- Interesting read about [splat operator](https://thoughtbot.com/blog/ruby-splat-operator)  
 
+- Object:  
+\- Everything is object  
+\- Every object have an unique object ID  
+
