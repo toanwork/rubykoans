@@ -34,3 +34,6 @@ Ruby version: 3.2.2
 \- Symbol doesn't have String methods  
 \- It's not a good idea to dynamically create a lot of symbols  
 
+- Array:  
+\- Interesting read about [splat operator](https://thoughtbot.com/blog/ruby-splat-operator)  
+
