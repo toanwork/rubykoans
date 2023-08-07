@@ -41,3 +41,9 @@ Ruby version: 3.0.0
 \- Everything is object  
 \- Every object have an unique object ID  
 
+- Hash:  
+\- `hash[:doesnt_exist_key]` return `nil`  
+`hash.fetch(:doesnt_exist_key)` throw `KeyError` exception  
+\- Hash is unordered  
+\- Hash default value is the same object `h = Hash.new([])`. To prevent this, use:  
+\- Hash default value with block: `h = Hash.new {|hash, key| hash[key] = []}`  
