@@ -2,7 +2,7 @@
 
 This is my attempt to solve the [Ruby Koans](https://www.rubykoans.com/)
 
-Ruby version: 3.2.2
+Ruby version: 3.0.0
 
 ## What I've Learned
 
