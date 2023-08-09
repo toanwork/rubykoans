@@ -47,3 +47,11 @@ Ruby version: 3.0.0
 \- Hash is unordered  
 \- Hash default value is the same object `h = Hash.new([])`. To prevent this, use:  
 \- Hash default value with block: `h = Hash.new {|hash, key| hash[key] = []}`  
+
+- Method:  
+\- Method with default value for arguments: `method_with_defaults(a, b=:default_value)`  
+\- Method with variable arguments: `method_with_var_args(*args)`  
+\- Can't call private methods with an explicit receiver: `self.private_method` will raise `NoMethodError` exception  
+
+
+
