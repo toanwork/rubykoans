@@ -52,6 +52,5 @@ Ruby version: 3.0.0
 \- Method with default value for arguments: `method_with_defaults(a, b=:default_value)`  
 \- Method with variable arguments: `method_with_var_args(*args)`  
 \- Can't call private methods with an explicit receiver: `self.private_method` will raise `NoMethodError` exception  
-
-
-
+\- Keword arguments:  
+	`method_with_keyword_arguments(one: 1, two: 'two')`  
