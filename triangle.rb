@@ -16,6 +16,9 @@
 def triangle(a, b, c)
   # WRITE THIS CODE
   sides = [a, b, c]
+
+  raise TriangleError if sides.any? {|side| side <= 0} || (a + b) <= c || (b + c) <= a || (c + a) <= b
+
   sides.uniq!
 
   case sides.length
