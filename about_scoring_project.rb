@@ -31,6 +31,31 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 def score(dice)
   # You need to write this method
+  points = 0
+
+  1.upto(6).each do |i|
+
+    # count the number of `i` in array `dice`
+    count = dice.inject(0) { |acc, j| j == i ? acc += 1 : acc }
+
+    case i
+    when 1
+      if count >= 3
+        points += (1000 + (count - 3) * 100)
+      else
+        points = count * 100
+      end
+    when 5
+      if count >= 3
+        points += (500 + (count - 3) * 50)
+      else
+        points += count * 50
+      end
+    else
+      points += 100 * i if count >= 3
+    end
+  end
+  points
 end
 
 class AboutScoringProject < Neo::Koan
